@@ -1,0 +1,10 @@
+.asset-registration { min-width:0; }
+.asset-registration fieldset { display:grid; grid-template-columns:repeat(auto-fit,minmax(min(230px,100%),1fr)); gap:12px; border:1px solid #d7e2ef; border-radius:8px; margin:12px 0; padding:16px; }
+.asset-registration label { display:grid; gap:6px; min-width:0; }
+.asset-registration .visit-file-help { grid-column: 1 / -1; }
+.asset-registration .visit-file-item { overflow-wrap: anywhere; min-width: 0; }
+.asset-registration .visit-file-item small { display: block; }
+.asset-registration input,.asset-registration select,.asset-registration textarea { width:100%; min-height:40px; box-sizing:border-box; border:1px solid #bbcde2; border-radius:6px; padding:8px; font:inherit; }
+.asset-registration details { margin-top:16px; overflow-x:auto; }
+.asset-registration button { margin:6px 8px 6px 0; }
+.asset-registration :focus-visible { outline:3px solid #125cc7; outline-offset:3px; }

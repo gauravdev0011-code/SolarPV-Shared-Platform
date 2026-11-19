@@ -1,0 +1,13 @@
+panel_id,visit_timestamp,visit_origin,inspection_method,measurement,value,unit,measurement_status,notes
+J-24-B,2026-09-10T16:00:00+00:00,synthetic,simulated_multi_sensor_inspection,module_surface_temperature,38.6,degC,present,
+J-24-B,2026-09-10T16:00:00+00:00,synthetic,simulated_multi_sensor_inspection,ambient_temperature,29.4,degC,present,
+J-24-B,2026-09-10T16:00:00+00:00,synthetic,simulated_multi_sensor_inspection,hotspot_temperature,43.1,degC,present,
+J-24-B,2026-10-08T16:00:00+00:00,synthetic,simulated_multi_sensor_inspection,module_surface_temperature,39.8,degC,present,
+J-24-B,2026-10-08T16:00:00+00:00,synthetic,simulated_multi_sensor_inspection,ambient_temperature,30.1,degC,present,
+J-24-B,2026-10-08T16:00:00+00:00,synthetic,simulated_multi_sensor_inspection,hotspot_temperature,44.6,degC,present,
+J-24-B,2026-11-05T16:00:00+00:00,synthetic,simulated_multi_sensor_inspection,module_surface_temperature,41.2,degC,present,
+J-24-B,2026-11-05T16:00:00+00:00,synthetic,simulated_multi_sensor_inspection,ambient_temperature,31.0,degC,present,
+J-24-B,2026-11-05T16:00:00+00:00,synthetic,simulated_multi_sensor_inspection,hotspot_temperature,46.3,degC,present,
+J-24-B,2026-11-18T16:00:00+00:00,synthetic,simulated_multi_sensor_inspection,module_surface_temperature,40.4,degC,present,
+J-24-B,2026-11-18T16:00:00+00:00,synthetic,simulated_multi_sensor_inspection,ambient_temperature,30.6,degC,present,
+J-24-B,2026-11-18T16:00:00+00:00,synthetic,simulated_multi_sensor_inspection,hotspot_temperature,45.2,degC,present,

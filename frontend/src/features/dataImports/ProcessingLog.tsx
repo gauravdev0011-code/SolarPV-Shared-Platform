@@ -1,0 +1,7 @@
+import {useEffect,useState} from 'react';
+import {api} from '../../api/solaris';
+export default function ProcessingLog({workspaceId,jobId}:{workspaceId:string;jobId?:string}){
+  const [job,setJob]=useState<Record<string,unknown>|null>(null),[error,setError]=useState(''),[retry,setRetry]=useState(0);
+  useEffect(()=>{setJob(null);setError('');if(!jobId)return;let active=true;const controller=new AbortController();api.job(workspaceId,jobId,controller.signal).then(value=>{if(active)setJob(value);}).catch(()=>{if(active)setError('Processing record could not load. Retry without changing the source.');});return()=>{active=false;controller.abort();};},[workspaceId,jobId,retry]);
+  return <section aria-label="Processing Log"><h3>Processing Log</h3><p>Actual durable job record. No events or timestamps are inferred.</p>{!jobId&&<p>No processing job identifier is available for this version.</p>}{error&&<p role="alert">{error}<button type="button" onClick={()=>setRetry(value=>value+1)}>Retry processing log</button></p>}{jobId&&!job&&!error&&<p role="status">Loading processing record…</p>}{job&&<dl>{['job_id','state','attempt_count','max_attempts','progress_stage','created_at','updated_at','available_at','last_error_code','last_error_message'].map(field=><div key={field}><dt>{field.replaceAll('_',' ')}</dt><dd>{job[field]==null?'Not recorded':String(job[field])}</dd></div>)}</dl>}<p>Detailed attempt events are shown only if supported by a recorded API contract; this view does not invent a complete audit trail.</p></section>;
+}
