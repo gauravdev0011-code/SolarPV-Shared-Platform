@@ -1,0 +1,6 @@
+.equipment-association { min-width:0; }
+.equipment-association fieldset { min-width:0; display:grid; gap:12px; }
+.equipment-association label { display:grid; gap:6px; min-width:0; }
+.equipment-association select { width:100%; max-width:100%; min-width:0; }
+.equipment-association pre { max-height:240px; overflow:auto; white-space:pre-wrap; overflow-wrap:anywhere; font-size:inherit; }
+.equipment-association dd { overflow-wrap:anywhere; }

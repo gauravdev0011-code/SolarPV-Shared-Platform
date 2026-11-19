@@ -1,0 +1,9 @@
+.inverter-map { padding: 10px; overflow: auto; }
+.inverter-map svg { display: block; width: 100%; min-width: 430px; background: #f3f7fb; border-radius: 8px; }
+.inverter-band { fill: #dde9fa; stroke: #95aecb; stroke-width: 2; }
+.inverter-map g[role=button] { cursor: pointer; }
+.inverter-map circle { fill: #175bc7; stroke: white; stroke-width: 4; }
+.inverter-map g[aria-pressed=true] circle, .inverter-map g:focus-visible circle { fill: #095c57; stroke: #03a399; }
+.inverter-map text { fill: #142e50; font: 700 29px "Segoe UI", sans-serif; paint-order: stroke; stroke: #f3f7fb; stroke-width: 5px; }
+.inverter-equipment rect { fill: #816223; }
+.inverter-equipment path { fill: none; stroke: #816223; stroke-width: 3; }
